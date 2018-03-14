@@ -9,11 +9,12 @@ public class QuadBikeTest {
 
     @Before
     public void before() {
-        quadBike = new QuadBike(25, 50);
+        quadBike = new QuadBike(25, 50, "Blue", 2);
     }
 
+    @Test
     public void canGetaverageSpeed() {
-        assertEquals(1, quadBike.getAverageSpeed());
+        assertEquals(25, quadBike.getAverageSpeed());
     }
 
     @Test
@@ -24,5 +25,10 @@ public class QuadBikeTest {
     @Test
     public void canGetDriveDistance() {
         assertEquals(2, quadBike.driveDistance(50) );
+    }
+
+    @Test
+    public void canGetColor() {
+        assertEquals("Blue", quadBike.getColor());
     }
 }

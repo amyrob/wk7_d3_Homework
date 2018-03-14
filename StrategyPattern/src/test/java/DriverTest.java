@@ -9,7 +9,7 @@ public class DriverTest {
 
     @Before
     public void before() {
-        dodgemCar = new DodgemCar(1, 2);
+        dodgemCar = new DodgemCar(1, 2, "Gold");
         driver = new Driver("Jussi", dodgemCar);
 
     }
@@ -25,7 +25,7 @@ public class DriverTest {
 
     @Test
     public void canSetVehicle() {
-        QuadBike quadBike = new QuadBike(25, 25);
+        QuadBike quadBike = new QuadBike(25, 25, "British Racing Green", 2);
         driver.setVehicle(quadBike);
         assertEquals(quadBike, driver.getVehicle());
     }

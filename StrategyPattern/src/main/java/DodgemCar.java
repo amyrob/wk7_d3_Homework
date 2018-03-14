@@ -1,21 +1,13 @@
-public class DodgemCar implements IDriveable {
-    int averageSpeed;
-    int numberOfSeats;
+public class DodgemCar extends Vehicle {
 
-    public DodgemCar(int averageSpeed, int numberOfSeats) {
-        this.averageSpeed = averageSpeed;
+    public DodgemCar(int averageSpeed, int numberOfSeats, String color) {
+        super(averageSpeed, color, numberOfSeats);
+
         this.numberOfSeats = numberOfSeats;
-    }
-
-    public int getAverageSpeed() {
-        return this.averageSpeed;
     }
 
     public int getNumberOfSeats() {
         return this.numberOfSeats;
     }
 
-    public int driveDistance(int distance) {
-        return distance / this.averageSpeed;
-    }
 }

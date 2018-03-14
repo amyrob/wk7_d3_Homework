@@ -8,7 +8,7 @@ public class DodgemCarTest {
 
     @Before
     public void before() {
-        dodgemCar = new DodgemCar(1, 2);
+        dodgemCar = new DodgemCar(1, 2, "gold");
     }
 
     @Test

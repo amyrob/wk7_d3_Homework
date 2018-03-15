@@ -1,4 +1,8 @@
-public class  QuadBike extends Vehicle {
+package DriverManagement;
+
+import Behaviours.IDriveable;
+
+public class  QuadBike extends Vehicle implements IDriveable {
 
     int engineCapacityCc;
 

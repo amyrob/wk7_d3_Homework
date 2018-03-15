@@ -1,3 +1,5 @@
+import DriverManagement.DodgemCar;
+import DriverManagement.Vehicle;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +10,7 @@ public class DodgemCarTest {
 
     @Before
     public void before() {
-        dodgemCar = new DodgemCar(1, 2, "gold");
+        dodgemCar = new DodgemCar(1, 2, "gold", 90);
     }
 
     @Test

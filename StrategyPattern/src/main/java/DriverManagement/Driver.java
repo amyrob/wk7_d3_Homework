@@ -1,3 +1,7 @@
+package DriverManagement;
+
+import Behaviours.IDriveable;
+
 public class Driver {
     String name;
     IDriveable vehicle;
@@ -14,6 +18,9 @@ public class Driver {
     public IDriveable getVehicle() {
         return this.vehicle;
     }
+public int driveDistance(int distance) {
+        return vehicle.driveDistance(distance);
+}
 
     public void setVehicle(IDriveable vehicle) {
         this.vehicle = vehicle;
